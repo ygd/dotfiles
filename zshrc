@@ -74,14 +74,6 @@ alias b='bundle'
 alias ber='bundle exec rake'
 alias beg='bundle exec guard'
 
-alias r='rspec'
-alias rs='rspec spec/'
-
-alias fs='foreman start'
-alias fsi='foreman start injixo-com'
-alias fsb='foreman start injixo-blog'
-alias fsib='foreman start injixo-com=1,injixo-blog=1'
-
 alias jb='jekyll build'
 alias js='jekyll serve'
 alias js2='jekyll serve --limit_posts=2'
