@@ -1,0 +1,34 @@
+[user]
+	name = yguezeldal
+	email = yasin.guezeldal@invision.de
+[core]
+	editor = vim
+	excludesfile = /Users/ygd/.gitexludes
+[credential]
+	helper = osxkeychain
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[push]
+	default = simple
+[pull]
+  rebase = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
