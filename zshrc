@@ -38,7 +38,7 @@ GIT_PS1_SHOWCOLORHINTS=1
 
 export PATH=/usr/local/bin:$PATH
 
-alias ez="vim ~/.zshrc"
+alias ez="vim ~/repos/dotfiles/zshrc"
 alias sz="source ~/.zshrc"
 
 alias shf='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
