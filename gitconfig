@@ -3,7 +3,7 @@
 	email = yasin.guezeldal@invision.de
 [core]
 	editor = vim
-	excludesfile = /Users/ygd/.gitexludes
+	excludesfile = ~/.gitexcludes
 [credential]
 	helper = osxkeychain
 
