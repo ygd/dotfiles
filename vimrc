@@ -99,7 +99,7 @@ nnoremap <leader>wq :wq<cr>
 nnoremap <leader>f :CtrlP<CR>
 nnoremap <leader><leader> <C-^>
 nnoremap <leader>s :%s/
-nnoremap .. @q
+nnoremap <leader>. @q
 
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
