@@ -15,8 +15,6 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-eval $(docker-machine env default)
-
 # colors
 autoload -U colors
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
