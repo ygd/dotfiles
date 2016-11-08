@@ -73,7 +73,9 @@ alias ber='bundle exec rake'
 alias beg='bundle exec guard'
 
 alias jb='jekyll build'
+alias jbp='JEKYLL_ENV=production jekyll build'
 alias js='jekyll serve'
+alias jsp='JEKYLL_ENV=production jekyll serve'
 alias js2='jekyll serve --limit_posts=2'
 
 alias c='clear'
