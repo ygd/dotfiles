@@ -10,6 +10,8 @@ export KEYTIMEOUT=1
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/ygd/.zshrc'
 
+if which exenv > /dev/null; then eval "$(exenv init -)"; fi
+
 export NVM_DIR=~/.nvm
   . $(brew --prefix nvm)/nvm.sh
 
