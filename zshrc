@@ -3,6 +3,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 export KEYTIMEOUT=1
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
