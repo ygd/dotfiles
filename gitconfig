@@ -1,31 +1,39 @@
 [user]
-	name = yguezeldal
-	email = yasin.guezeldal@invision.de
+  name = yguezeldal
+  email = yasin.guezeldal@invision.de
 [core]
-	editor = vim
-	excludesfile = ~/.gitexcludes
+  editor = vim
+  excludesfile = ~/.gitexcludes
+  pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 
+[diff]
+  compactionHeuristic = true
+[interactive]
+  diffFilter = diff-so-fancy
 [color]
-  branch = auto
-  diff = auto
-  status = auto
+  ui = always
+[color "diff"]
+  meta = yellow bold
+  commit = green bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = "red bold 52"
+  newNormal = "green bold"
+  newHighlight = "green bold 22"
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
-[color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
-[push]
-	default = simple
 [pull]
   rebase = true
 [filter "lfs"]
