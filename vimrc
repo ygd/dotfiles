@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-commentary'
@@ -100,6 +101,19 @@ nnoremap <leader>f :CtrlP<CR>
 nnoremap <leader><leader> <C-^>
 nnoremap <leader>s :%s/
 nnoremap <leader>. @q
+
+nnoremap <leader>g :Gstatus<cr>
+nnoremap <leader>ge :Gedit<cr>
+nnoremap <leader>ga :Gwrite<cr>
+nnoremap <leader>gco :Gread<cr>
+nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gp :Git push<cr>
+nnoremap <leader>gpl :Git pull<cr>
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gb :Gblame<cr>
+nnoremap <leader>grn :Gmove<cr>
+nnoremap <leader>grm :Gremove<cr>
+nnoremap <leader>gg :Ggrep
 
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
