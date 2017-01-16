@@ -27,6 +27,8 @@ Plugin 'tpope/vim-endwise'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'alvan/vim-closetag'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
@@ -84,6 +86,8 @@ endif
 
 let g:airline_powerline_fonts = 1
 let mapleader=" "
+let g:jsx_ext_required = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 nnoremap <leader>a :Ack!<space>
