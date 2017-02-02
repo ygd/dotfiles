@@ -65,14 +65,17 @@ alias gd='git diff'
 alias gl="git log --oneline --graph --decorate --date=relative"
 alias gc='git commit --verbose'
 alias gca='git commit -a'
+alias gcamend='git commit --amend'
 alias gco='git checkout'
 alias gcom='git checkout master'
 alias gcob='git checkout -b'
 alias gmm='git merge master'
 alias gpuo='git push -u origin'
+alias gpfwl='git push --force-with-lease'
 alias grpo='git remote prune origin'
 
 alias b='bundle'
+alias bu='bundle update'
 alias ber='bundle exec rake'
 alias beg='bundle exec guard'
 
