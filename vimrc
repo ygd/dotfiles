@@ -44,7 +44,7 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 
-set colorcolumn=81
+execute "set colorcolumn=" . join(range(81,335), ',')
 set number
 set smartcase
 set hlsearch
