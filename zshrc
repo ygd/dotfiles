@@ -30,6 +30,7 @@ setopt prompt_percent
 autoload -U promptinit
 promptinit
 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 precmd () { __git_ps1 "%{$fg_bold[cyan]%}%~%{$reset_color%} " "%# " "(%s) " }
 GIT_PS1_SHOWDIRTYSTATE=1
