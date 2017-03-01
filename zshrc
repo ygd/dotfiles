@@ -87,6 +87,7 @@ alias jsp='JEKYLL_ENV=production jekyll serve'
 alias js2='jekyll serve --limit_posts=2'
 
 alias d='docker'
+alias drmia='docker rmi $(docker images -q)'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 alias dc='docker-compose'
