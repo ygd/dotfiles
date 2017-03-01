@@ -10,6 +10,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-commentary'
@@ -28,8 +29,8 @@ Plugin 'tpope/vim-endwise'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'alvan/vim-closetag'
 Plugin 'jlanzarotta/bufexplorer'
-Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
+Plugin 'maxmellon/vim-jsx-pretty'
 
 call vundle#end()
 filetype plugin indent on
@@ -88,7 +89,14 @@ endif
 let g:airline_powerline_fonts = 1
 let mapleader=" "
 let g:jsx_ext_required = 0
+let g:gitgutter_sign_column_always = 1
+
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_echo_current_error = 1
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 nnoremap <leader>a :Ack!<space>
@@ -119,6 +127,7 @@ nnoremap <leader>gb :Gblame<cr>
 nnoremap <leader>grn :Gmove<cr>
 nnoremap <leader>grm :Gremove<cr>
 nnoremap <leader>gg :Ggrep
+nnoremap <leader>gt :GitGutterToggle<cr>
 
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
