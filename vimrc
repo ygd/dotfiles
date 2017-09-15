@@ -30,6 +30,8 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'alvan/vim-closetag'
 Plugin 'pangloss/vim-javascript'
 Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'chrisbra/Colorizer'
+Plugin 'mattn/emmet-vim', { 'for': ['javascript.jsx', 'html', 'css'] }
 
 call vundle#end()
 filetype plugin indent on
@@ -89,19 +91,30 @@ let g:airline_powerline_fonts = 1
 let mapleader=" "
 let g:jsx_ext_required = 0
 let g:gitgutter_sign_column_always = 1
+let g:colorizer_auto_filetype = 'css,scss,html'
 
+autocmd FileType javascript set formatprg=prettier-eslint\ --stdin
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_sass_checkers=["stylelint"]
+let g:syntastic_css_checkers=["stylelint"]
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_echo_current_error = 1
 
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}
+
 let g:ackprg = 'ag --nogroup --nocolor --column'
 nnoremap <leader>a :Ack!<space>
 nnoremap <leader>n :NERDTree <cr>
 nnoremap <leader>rn :Rename<space>
 nnoremap <leader>rm :call delete(expand('%')) \| bdelete!
+nnoremap <leader>lo :lopen<cr>
 
 nnoremap <leader>ev :tabe $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
