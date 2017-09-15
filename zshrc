@@ -72,7 +72,7 @@ alias gco='git checkout'
 alias gcom='git checkout master'
 alias gcob='git checkout -b'
 alias gmm='git merge master'
-alias gpuo='git push -u origin'
+alias gpuo='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpfwl='git push --force-with-lease'
 alias grpo='git remote prune origin'
 
