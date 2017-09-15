@@ -28,7 +28,6 @@ Plugin 'tpope/vim-liquid'
 Plugin 'tpope/vim-endwise'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'alvan/vim-closetag'
-Plugin 'jlanzarotta/bufexplorer'
 Plugin 'pangloss/vim-javascript'
 Plugin 'maxmellon/vim-jsx-pretty'
 
