@@ -54,6 +54,7 @@ alias v="vim"
 alias g='git status -u'
 alias gb='git branch -a'
 alias gbd='git branch -D'
+alias gbdm='git branch --merged | grep -v “\*” | grep -v “master” |  xargs -n 1 git branch -d'
 alias gpl='git pull'
 alias gp='git push'
 alias ga='git add'
