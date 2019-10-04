@@ -12,9 +12,6 @@ zstyle :compinstall filename '/Users/ygd/.zshrc'
 
 if which exenv > /dev/null; then eval "$(exenv init -)"; fi
 
-export NVM_DIR=~/.nvm
-  . $(brew --prefix nvm)/nvm.sh
-
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
