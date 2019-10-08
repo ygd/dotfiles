@@ -130,3 +130,5 @@ rbenv() {
 }
 
 [[ -s "/Users/ygd/.gvm/scripts/gvm" ]] && source "/Users/ygd/.gvm/scripts/gvm"
+
+. /usr/local/opt/asdf/asdf.sh
