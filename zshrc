@@ -39,6 +39,9 @@ GIT_PS1_SHOWCOLORHINTS=1
 
 export PATH=/usr/local/bin:$PATH
 
+set undodir=~/.vim/undo
+set undofile
+
 alias ez="vim ~/repos/dotfiles/zshrc"
 alias sz="source ~/.zshrc"
 
@@ -55,6 +58,7 @@ alias gbd='git branch -D'
 alias gbdm='git branch --merged | grep -v “\*” | grep -v “master” |  xargs -n 1 git branch -d'
 alias gpl='git pull'
 alias gp='git push'
+alias gf='git fetch'
 alias ga='git add'
 alias gap='git add --patch'
 alias gaa='git add -A'
@@ -70,12 +74,14 @@ alias gco='git checkout'
 alias gcom='git checkout master'
 alias gcob='git checkout -b'
 alias gmm='git merge master'
+alias grom='git rebase origin/master'
 alias gpuo='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpfwl='git push --force-with-lease'
 alias grpo='git remote prune origin'
 
 alias b='bundle'
 alias bu='bundle update'
+alias be='bundle exec'
 alias ber='bundle exec rake'
 alias beg='bundle exec guard'
 
@@ -106,6 +112,8 @@ alias ..='cd ..'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 alias .....='cd ../../../../'
+
+alias localhorst='sudo ifconfig lo0 alias 192.168.100.1'
 
 function f() { cd $(find ~/repos -maxdepth 2 -type d | selecta) }
 

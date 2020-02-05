@@ -41,3 +41,7 @@
 	required = true
 [fetch]
 	prune = 1
+[push]
+	default = current
+[commit]
+	gpgsign = true

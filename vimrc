@@ -31,12 +31,15 @@ Plugin 'alvan/vim-closetag'
 Plugin 'pangloss/vim-javascript'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'chrisbra/Colorizer'
+Plugin 'janko/vim-test'
 Plugin 'mattn/emmet-vim', { 'for': ['javascript.jsx', 'html', 'css'] }
 
 call vundle#end()
 filetype plugin indent on
 
 colorscheme jellybeans
+
+let test#strategy = "vimterminal"
 
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
@@ -61,7 +64,7 @@ set tabstop=2
 set ai
 set si
 set undofile
-set undodir=/Users/ygd/.vimundo/
+set undodir=~/.vim/undo-dir/
 
 augroup vimrc
   autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
@@ -115,6 +118,10 @@ nnoremap <leader>n :NERDTree <cr>
 nnoremap <leader>rn :Rename<space>
 nnoremap <leader>rm :call delete(expand('%')) \| bdelete!
 nnoremap <leader>lo :lopen<cr>
+
+nnoremap <leader>tn :TestNearest<cr>
+nnoremap <leader>tf :TestFile<cr>
+nnoremap <leader>tl :TestLast<cr>
 
 nnoremap <leader>ev :tabe $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
