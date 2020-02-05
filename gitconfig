@@ -1,5 +1,5 @@
 [user]
-  name = ygd
+  name = Yasin Güzeldal
   email = yasin.guezeldal@invision.de
 [core]
   editor = vim
@@ -7,7 +7,6 @@
   pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
   helper = osxkeychain
-
 [diff]
   compactionHeuristic = true
 [interactive]
