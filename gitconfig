@@ -1,6 +1,7 @@
 [user]
   name = Yasin Güzeldal
   email = yasin.guezeldal@invision.de
+	signingkey = 5E5D23525A22EF90
 [core]
   editor = vim
   excludesfile = ~/.gitexcludes
